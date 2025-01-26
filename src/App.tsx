@@ -71,13 +71,13 @@ function App() {
               Master's Student in Computer Science | AI, Machine Learning, and Data Engineering Enthusiast
             </p>
             <div className="flex gap-4 mt-6">
-              <a href="https://github.com" className="hover:text-blue-200 transition-colors">
+              <a href="https://github.com/himavanthkar/himavanthkar/blob/main/README.md" className="hover:text-blue-200 transition-colors">
                 <Github className="w-6 h-6" />
               </a>
-              <a href="https://linkedin.com" className="hover:text-blue-200 transition-colors">
+              <a href="https://www.linkedin.com/in/himavanth-karpurapu-6907561b3/" className="hover:text-blue-200 transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="mailto:himavanth@example.com" className="hover:text-blue-200 transition-colors">
+              <a href="mailto:himmvanth89@gmail.com" className="hover:text-blue-200 transition-colors">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
