@@ -92,7 +92,9 @@ function App() {
           <div className="max-w-3xl mx-auto text-lg leading-relaxed">
             <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
               Hi, I'm Himavanth Karpurapu! I'm currently pursuing my Master's in Computer Science at San Jose State University (SJSU).
-              I specialize in Software Development, Artificial Intelligence, and Data Engineering. My passion lies in developing
+              I specialize in Software Development, Artificial Intelligence, and Data Engineering. With a strong academic foundation in Computer Science, I bring a passion for leveraging Artificial Intelligence to address meaningful challenges. Currently pursuing my Master’s degree in Computer Science at San Jose State University, I have completed my first semester, focusing on Machine Learning, Data Mining, and Neural Networks. These areas have shaped my understanding of how AI can be applied to solve complex, real-world problems.
+              My hands-on experience spans cloud computing and AI research. During my role at Winit Technology, I deployed scalable AI pipelines and optimized distributed systems using Kubernetes and Docker. My research projects include developing a Medical Image Perception System, which fused CNN-based deep learning features with traditional vision techniques to achieve 86.5% accuracy and a 0.923 AUC. Additionally, I engineered a Coral Larvae Detection System, employing advanced computer vision algorithms like Gaussian filtering and Hough Transforms to excel in challenging underwater environments.
+              I am actively seeking internship opportunities where I can contribute my skills to impactful AI-driven projects. With experience in distributed systems, neural networks, and performance optimization, I am eager to collaborate with teams focused on innovation and solving critical problems through technology.My passion lies in developing
               AI-driven solutions that can make a real impact in the healthcare and technology sectors.
             </p>
             <p className={`mt-4 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
