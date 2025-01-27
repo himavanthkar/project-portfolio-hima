@@ -77,7 +77,7 @@ function App() {
               <a href="https://www.linkedin.com/in/himavanth-karpurapu-6907561b3/" className="hover:text-blue-200 transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="mailto:himmvanth89@gmail.com" className="hover:text-blue-200 transition-colors">
+              <a href="mailto:himvanth89@gmail.com" className="hover:text-blue-200 transition-colors">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
