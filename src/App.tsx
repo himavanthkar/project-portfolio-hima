@@ -190,7 +190,7 @@ function App() {
               <a href="#projects" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>Projects</a>
               <a href="#skills" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>Skills</a>
               <a href="#contact" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>Contact</a>
-              <div className="py-2">
+              <div className="py-3">
                 <ResumeDownload />
               </div>
               <button
