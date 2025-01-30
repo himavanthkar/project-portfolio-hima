@@ -95,9 +95,9 @@ export const ResumeDownload: React.FC = () => {
   return (
     <button
       onClick={handleDownload}
-      className="flex items-center px-4 py-2.5 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors shadow-md w-full md:w-auto text-base"
+      className="flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-lg w-full md:w-auto text-lg font-medium"
     >
-      <Download className="w-5 h-5 mr-2" />
+      <Download className="w-6 h-6 mr-3" />
       Download Resume
     </button>
   );

@@ -183,14 +183,14 @@ function App() {
             </div>
           </div>
           {/* Mobile menu */}
-          <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden mt-4 pb-2`}>
+          <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden mt-4 pb-4`}>
             <div className="flex flex-col space-y-4">
               <a href="#about" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>About</a>
               <a href="#experience" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>Experience</a>
               <a href="#projects" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>Projects</a>
               <a href="#skills" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>Skills</a>
               <a href="#contact" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>Contact</a>
-              <div className="py-3">
+              <div className="py-4 border-t border-b border-gray-200 dark:border-gray-700 my-2">
                 <ResumeDownload />
               </div>
               <button
