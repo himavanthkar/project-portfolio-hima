@@ -21,7 +21,7 @@ const useDarkMode = () => {
 // Project data
 const projectData = [
   {
-    title: "Peer Support Website",
+    title: "Peer Support Website (Real-Time Distributed System)",
     period: "Jan 2024 - Present",
     description: "A real-time distributed system for peer support and communication using AWS services",
     details: {
@@ -30,12 +30,12 @@ const projectData = [
       action: "Deployed the application on AWS Elastic Beanstalk, used RDS for storage, and implemented ElastiCache (Redis) for distributed caching. Designed a Power BI dashboard to visualize user engagement metrics.",
       result: "Improved system performance by 25% and enabled real-time communication for over 1,000 users."
     },
-    technologies: ["React", "SignalR", "AWS", "Redis", "Power BI"],
+    technologies: ["React", "SignalR", "AWS Elastic Beanstalk", "RDS", "ElastiCache", "Power BI"],
     githubUrl: "https://github.com/himavanthkar",
     demoUrl: "https://github.com/himavanthkar"
   },
   {
-    title: "Distributed Task Scheduler",
+    title: "Distributed Task Scheduler with Kubernetes and C#",
     period: "Feb 2024 - Aug 2024",
     description: "A Kubernetes-based distributed task scheduler using C# and .NET Core on AWS EKS",
     details: {
@@ -44,12 +44,12 @@ const projectData = [
       action: "Deployed the scheduler on Amazon EKS (Elastic Kubernetes Service), used Amazon SQS for task distribution, and implemented Prometheus/Grafana for monitoring. Designed a REST API for task submission and status checking.",
       result: "Achieved high availability and scalability, with a 30% improvement in task execution efficiency."
     },
-    technologies: ["C#", ".NET Core", "Kubernetes", "AWS EKS", "Amazon SQS", "Prometheus"],
+    technologies: ["C#", ".NET Core", "AWS EKS", "Amazon SQS", "Prometheus", "Grafana"],
     githubUrl: "https://github.com/himavanthkar",
     demoUrl: "https://github.com/himavanthkar"
   },
   {
-    title: "AI Movie Recommendation System",
+    title: "AI Movie Recommendation System with Real-Time Analytics",
     period: "Aug 2024 - Dec 2024",
     description: "Real-time movie recommendation system with analytics using AWS services",
     details: {
@@ -58,7 +58,7 @@ const projectData = [
       action: "Built scalable data pipelines with Amazon Kinesis for streaming and EMR (Spark) for batch processing. Deployed the system using Kubernetes and designed an admin dashboard to visualize user engagement metrics.",
       result: "Improved recommendation accuracy by 20% and enabled real-time analytics for over 10,000 users."
     },
-    technologies: ["Python", "AWS Kinesis", "EMR", "Spark", "Kubernetes", "Deep Learning"],
+    technologies: ["Python", "AWS Kinesis", "EMR", "Spark", "Deep Learning", "Kubernetes"],
     githubUrl: "https://github.com/himavanthkar",
     demoUrl: "https://github.com/himavanthkar"
   }
