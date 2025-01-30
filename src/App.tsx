@@ -157,6 +157,16 @@ function App() {
             <div className="text-2xl font-bold">
               <a href="#home" className={`${isDark ? 'text-white' : 'text-gray-900'}`}>HK</a>
             </div>
+            {/* Mobile menu button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden p-2 rounded-md focus:outline-none"
+            >
+              <div className={`w-6 h-0.5 mb-1.5 ${isDark ? 'bg-white' : 'bg-gray-900'}`}></div>
+              <div className={`w-6 h-0.5 mb-1.5 ${isDark ? 'bg-white' : 'bg-gray-900'}`}></div>
+              <div className={`w-6 h-0.5 ${isDark ? 'bg-white' : 'bg-gray-900'}`}></div>
+            </button>
+            {/* Desktop menu */}
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>About</a>
               <a href="#experience" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>Experience</a>
@@ -167,6 +177,25 @@ function App() {
               <button
                 onClick={() => setIsDark(!isDark)}
                 className={`p-2 rounded-full ${isDark ? 'bg-gray-700 text-yellow-400' : 'bg-gray-100 text-gray-600'}`}
+              >
+                {isDark ? <Sun size={20} /> : <Moon size={20} />}
+              </button>
+            </div>
+          </div>
+          {/* Mobile menu */}
+          <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden mt-4 pb-2`}>
+            <div className="flex flex-col space-y-4">
+              <a href="#about" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>About</a>
+              <a href="#experience" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>Experience</a>
+              <a href="#projects" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>Projects</a>
+              <a href="#skills" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>Skills</a>
+              <a href="#contact" className={`${isDark ? 'text-gray-300' : 'text-gray-600'} hover:text-blue-600`}>Contact</a>
+              <div className="py-2">
+                <ResumeDownload />
+              </div>
+              <button
+                onClick={() => setIsDark(!isDark)}
+                className={`p-2 rounded-full ${isDark ? 'bg-gray-700 text-yellow-400' : 'bg-gray-100 text-gray-600'} w-fit`}
               >
                 {isDark ? <Sun size={20} /> : <Moon size={20} />}
               </button>
