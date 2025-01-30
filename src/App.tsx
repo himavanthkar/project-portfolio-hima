@@ -23,44 +23,44 @@ const projectData = [
   {
     title: "Peer Support Website",
     period: "Jan 2024 - Present",
-    description: "A real-time distributed system for peer support and communication",
+    description: "A real-time distributed system for peer support and communication using AWS services",
     details: {
       situation: "Users needed a platform to connect and communicate in real-time.",
       task: "Build a real-time peer support platform using WebSockets and SignalR.",
-      action: "Deployed the application on Azure App Service, used Azure SQL Database for storage, and implemented Redis for distributed caching. Designed a Power BI dashboard to visualize user engagement metrics.",
+      action: "Deployed the application on AWS Elastic Beanstalk, used RDS for storage, and implemented ElastiCache (Redis) for distributed caching. Designed a Power BI dashboard to visualize user engagement metrics.",
       result: "Improved system performance by 25% and enabled real-time communication for over 1,000 users."
     },
-    technologies: ["React", "SignalR", "Azure", "Redis", "Power BI"],
-    githubUrl: "https://github.com/himavanthkar/peer-support-platform",
-    demoUrl: "https://peer-support.azurewebsites.net"
+    technologies: ["React", "SignalR", "AWS", "Redis", "Power BI"],
+    githubUrl: "https://github.com/himavanthkar",
+    demoUrl: "https://github.com/himavanthkar"
   },
   {
     title: "Distributed Task Scheduler",
     period: "Feb 2024 - Aug 2024",
-    description: "A Kubernetes-based distributed task scheduler using C# and .NET Core",
+    description: "A Kubernetes-based distributed task scheduler using C# and .NET Core on AWS EKS",
     details: {
       situation: "Needed a scalable solution to manage and distribute tasks across multiple nodes.",
       task: "Build a distributed task scheduler using C# and .NET Core.",
-      action: "Deployed the scheduler on Azure Kubernetes Service (AKS), used Azure Service Bus for task distribution, and implemented Prometheus/Grafana for monitoring.",
+      action: "Deployed the scheduler on Amazon EKS (Elastic Kubernetes Service), used Amazon SQS for task distribution, and implemented Prometheus/Grafana for monitoring. Designed a REST API for task submission and status checking.",
       result: "Achieved high availability and scalability, with a 30% improvement in task execution efficiency."
     },
-    technologies: ["C#", ".NET Core", "Kubernetes", "Azure Service Bus", "Prometheus"],
-    githubUrl: "https://github.com/himavanthkar/distributed-task-scheduler",
-    demoUrl: "https://task-scheduler.azurewebsites.net"
+    technologies: ["C#", ".NET Core", "Kubernetes", "AWS EKS", "Amazon SQS", "Prometheus"],
+    githubUrl: "https://github.com/himavanthkar",
+    demoUrl: "https://github.com/himavanthkar"
   },
   {
     title: "AI Movie Recommendation System",
     period: "Aug 2024 - Dec 2024",
-    description: "Real-time movie recommendation system with analytics",
+    description: "Real-time movie recommendation system with analytics using AWS services",
     details: {
       situation: "Needed a scalable recommendation system with real-time analytics for user engagement.",
       task: "Develop a recommendation system using collaborative filtering and deep learning models.",
-      action: "Built scalable data pipelines with Kafka for streaming and Spark for batch processing.",
+      action: "Built scalable data pipelines with Amazon Kinesis for streaming and EMR (Spark) for batch processing. Deployed the system using Kubernetes and designed an admin dashboard to visualize user engagement metrics.",
       result: "Improved recommendation accuracy by 20% and enabled real-time analytics for over 10,000 users."
     },
-    technologies: ["Python", "Kafka", "Spark", "Kubernetes", "Deep Learning"],
-    githubUrl: "https://github.com/himavanthkar/movie-recommender",
-    demoUrl: "https://movie-recommender.azurewebsites.net"
+    technologies: ["Python", "AWS Kinesis", "EMR", "Spark", "Kubernetes", "Deep Learning"],
+    githubUrl: "https://github.com/himavanthkar",
+    demoUrl: "https://github.com/himavanthkar"
   }
 ];
 
@@ -71,15 +71,15 @@ const experienceData = [
     company: "WINIT TECHNOLOGY PRIVATE SOLUTIONS LIMITED",
     period: "Apr 2023 - Aug 2024",
     description: [
-      "Automated Azure infrastructure provisioning using Terraform, reducing cloud migration time by 25% and increasing infrastructure automation by 20%.",
-      "Optimized resource allocation using auto-scaling, reducing computational costs by 30%.",
-      "Designed and implemented CI/CD pipelines using Jenkins and GitHub Actions.",
-      "Containerized applications using Docker and orchestrated deployments with Kubernetes."
+      "Used Terraform to automate AWS infrastructure provisioning, managed services like EC2 instances, RDS, S3, and Lambda.",
+      "Implemented auto-scaling to optimize costs and reduce computational expenses by 30%.",
+      "Designed CI/CD pipelines using Jenkins and GitHub Actions.",
+      "Containerized applications with Docker for deployment on Kubernetes."
     ],
     starDetails: {
       situation: "The company needed to migrate its infrastructure to the cloud with minimal downtime and manual intervention.",
       task: "Automate cloud infrastructure provisioning and optimize resource allocation.",
-      action: "Used Terraform to automate Azure infrastructure provisioning, managed services like Azure VMs, Azure SQL, Blob Storage, and Azure Functions.",
+      action: "Used Terraform to automate AWS infrastructure provisioning, managed services like EC2 instances, RDS, S3, and Lambda, and implemented auto-scaling to optimize costs. Designed CI/CD pipelines using Jenkins and GitHub Actions and containerized applications with Docker for deployment on Kubernetes.",
       result: "Reduced cloud migration time by 25%, increased automation by 20%, and cut computational costs by 30%."
     }
   },
@@ -88,16 +88,16 @@ const experienceData = [
     company: "UDAAN AI AND ML RESEARCH LAB, KMIT",
     period: "Mar 2020 - Aug 2022",
     description: [
-      "Developed a full-stack web application for medical imaging analysis with 97% accuracy.",
-      "Built frontend using React.js and backend with Flask.",
+      "Built frontend using React.js and backend with Flask for medical imaging analysis.",
       "Deployed CNN models using TensorFlow Serving and Docker.",
-      "Created data preprocessing pipelines with Python and OpenCV."
+      "Created data preprocessing pipelines with Python and OpenCV.",
+      "Integrated real-time inference capabilities achieving 97% accuracy."
     ],
     starDetails: {
       situation: "Doctors needed a faster and more accurate way to detect cancer from CT scans.",
       task: "Develop a full-stack web application for medical imaging analysis.",
-      action: "Built the frontend using React.js, backend with Flask, and deployed CNN models.",
-      result: "Achieved 97% accuracy in cancer detection and reduced diagnosis time by 40%."
+      action: "Built the frontend using React.js, backend with Flask, and deployed CNN models using TensorFlow Serving and Docker. Created data preprocessing pipelines with Python and OpenCV and integrated real-time inference capabilities.",
+      result: "Achieved 97% accuracy in cancer detection, reduced diagnosis time by 40%, and improved training efficiency by 15%."
     }
   }
 ];
@@ -113,12 +113,12 @@ const recognitionData = [
     description: "Created a real-time collaborative platform using distributed systems."
   },
   {
-    title: "Top 20% LeetCode Community",
-    description: "Demonstrated strong proficiency in data structures and algorithms."
+    title: "5-star on Codechef",
+    description: "Demonstrated strong proficiency in competitive programming."
   },
   {
     title: "Research Associate",
-    description: "Leading a team of 3 researchers to improve computer vision models at SJSU (Jan 2025-Present)"
+    description: "Working with Nada Attar at SJSU (Dec 2024 - Present)"
   }
 ];
 
@@ -126,9 +126,9 @@ const recognitionData = [
 const skillsData = {
   languages: ["Python", "JavaScript", "Java", "C++", "Go", "C#"],
   frameworks: ["React.js", "Flask", "FastAPI", ".NET", "PyTorch", "TensorFlow"],
-  cloud: ["Azure", "AWS", "Docker", "Kubernetes", "Terraform"],
-  databases: ["MongoDB", "Azure SQL", "Redis", "Firebase", "RDS"],
-  tools: ["Jenkins", "GitHub Actions", "Azure DevOps", "Power BI", "Tableau"]
+  cloud: ["AWS", "Docker", "Kubernetes", "Terraform"],
+  databases: ["Amazon RDS", "MongoDB", "Redis", "Firebase", "Amazon Aurora"],
+  tools: ["Jenkins", "GitHub Actions", "AWS DevOps", "Power BI", "Tableau", "Prometheus", "Grafana", "OpenCV"]
 };
 
 function App() {
