@@ -289,16 +289,34 @@ function App() {
               Master's Student in Computer Science | AI, Machine Learning, and Data Engineering Enthusiast
             </p>
             <div className="flex gap-4 mt-6">
-              <a href="https://github.com/himavanthkar" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 transition-colors">
+              <a 
+                href="https://github.com/himavanthkar" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="transform hover:text-blue-200 hover:scale-110 active:scale-95 transition-all duration-150"
+              >
                 <Github className="w-6 h-6" />
               </a>
-              <a href="https://www.linkedin.com/in/himavanth-karpurapu-6907561b3/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 transition-colors">
+              <a 
+                href="https://www.linkedin.com/in/himavanth-karpurapu-6907561b3/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="transform hover:text-blue-200 hover:scale-110 active:scale-95 transition-all duration-150"
+              >
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="https://www.instagram.com/himavanth_karpurapu/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 transition-colors">
+              <a 
+                href="https://www.instagram.com/himavanth_karpurapu/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="transform hover:text-blue-200 hover:scale-110 active:scale-95 transition-all duration-150"
+              >
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="mailto:himvanth89@gmail.com" className="hover:text-blue-200 transition-colors">
+              <a 
+                href="mailto:himvanth89@gmail.com" 
+                className="transform hover:text-blue-200 hover:scale-110 active:scale-95 transition-all duration-150"
+              >
                 <Mail className="w-6 h-6" />
               </a>
             </div>
@@ -587,16 +605,34 @@ function App() {
       <footer className={`${isDark ? 'bg-gray-800' : 'bg-gray-900'} text-white py-8`}>
         <div className="container mx-auto px-6 text-center">
           <div className="flex justify-center space-x-6 mb-4">
-            <a href="https://github.com/himavanthkar" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+            <a 
+              href="https://github.com/himavanthkar" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="transform hover:text-blue-400 hover:scale-110 active:scale-95 transition-all duration-150"
+            >
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://www.linkedin.com/in/himavanth-karpurapu-6907561b3/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+            <a 
+              href="https://www.linkedin.com/in/himavanth-karpurapu-6907561b3/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="transform hover:text-blue-400 hover:scale-110 active:scale-95 transition-all duration-150"
+            >
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="https://www.instagram.com/himavanth_karpurapu/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+            <a 
+              href="https://www.instagram.com/himavanth_karpurapu/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="transform hover:text-blue-400 hover:scale-110 active:scale-95 transition-all duration-150"
+            >
               <Instagram className="w-6 h-6" />
             </a>
-            <a href="mailto:himvanth89@gmail.com" className="hover:text-blue-400 transition-colors">
+            <a 
+              href="mailto:himvanth89@gmail.com" 
+              className="transform hover:text-blue-400 hover:scale-110 active:scale-95 transition-all duration-150"
+            >
               <Mail className="w-6 h-6" />
             </a>
           </div>
