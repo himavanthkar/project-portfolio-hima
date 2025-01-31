@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, User, Code, Briefcase, GraduationCap, Moon, Sun, Brain, Database, Award, ChevronRight, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, User, Code, Briefcase, GraduationCap, Moon, Sun, Brain, Database, Award, ChevronRight, ExternalLink, Instagram } from 'lucide-react';
 import { ExperienceCard } from './components/ExperienceCard';
 import { ResumeDownload } from './components/Resume';
 
@@ -295,6 +295,9 @@ function App() {
               <a href="https://www.linkedin.com/in/himavanth-karpurapu-6907561b3/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
+              <a href="https://www.instagram.com/himavanth_karpurapu/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 transition-colors">
+                <Instagram className="w-6 h-6" />
+              </a>
               <a href="mailto:himvanth89@gmail.com" className="hover:text-blue-200 transition-colors">
                 <Mail className="w-6 h-6" />
               </a>
@@ -589,6 +592,9 @@ function App() {
             </a>
             <a href="https://www.linkedin.com/in/himavanth-karpurapu-6907561b3/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
               <Linkedin className="w-6 h-6" />
+            </a>
+            <a href="https://www.instagram.com/himavanth_karpurapu/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+              <Instagram className="w-6 h-6" />
             </a>
             <a href="mailto:himvanth89@gmail.com" className="hover:text-blue-400 transition-colors">
               <Mail className="w-6 h-6" />
