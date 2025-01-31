@@ -61,6 +61,48 @@ const projectData = [
     technologies: ["Python", "AWS Kinesis", "EMR", "Spark", "Deep Learning", "Kubernetes"],
     githubUrl: "https://github.com/himavanthkar",
     demoUrl: "https://github.com/himavanthkar"
+  },
+  {
+    title: "Healthcare Image Analysis Platform",
+    period: "Mar 2022 - Aug 2022",
+    description: "AI-powered medical imaging analysis platform for cancer detection",
+    details: {
+      situation: "Doctors needed a faster and more accurate way to detect cancer from CT scans.",
+      task: "Develop a full-stack web application for medical imaging analysis.",
+      action: "Built the frontend using React.js, backend with Flask, and deployed CNN models using TensorFlow Serving and Docker. Created data preprocessing pipelines with Python and OpenCV.",
+      result: "Achieved 97% accuracy in cancer detection, reduced diagnosis time by 40%, and improved training efficiency by 15%."
+    },
+    technologies: ["React.js", "Flask", "TensorFlow", "Docker", "OpenCV", "Python"],
+    githubUrl: "https://github.com/himavanthkar",
+    demoUrl: "https://github.com/himavanthkar"
+  },
+  {
+    title: "Cloud Infrastructure Automation",
+    period: "Apr 2023 - Aug 2023",
+    description: "Enterprise-scale cloud infrastructure automation using AWS and Terraform",
+    details: {
+      situation: "The company needed to migrate its infrastructure to the cloud with minimal downtime.",
+      task: "Automate cloud infrastructure provisioning and optimize resource allocation.",
+      action: "Used Terraform to automate AWS infrastructure provisioning, managed services like EC2 instances, RDS, S3, and Lambda. Implemented auto-scaling and CI/CD pipelines.",
+      result: "Reduced cloud migration time by 25%, increased automation by 20%, and cut computational costs by 30%."
+    },
+    technologies: ["AWS", "Terraform", "Jenkins", "Docker", "Kubernetes", "GitHub Actions"],
+    githubUrl: "https://github.com/himavanthkar",
+    demoUrl: "https://github.com/himavanthkar"
+  },
+  {
+    title: "Privacy Policy Summarizer",
+    period: "Feb 2024",
+    description: "Stanford TreeHacks Winner - AI-powered privacy policy analysis tool",
+    details: {
+      situation: "Users struggle to understand lengthy privacy policies.",
+      task: "Create an AI tool to summarize and explain privacy policies in simple terms.",
+      action: "Developed an NLP model using transformer architecture and fine-tuned it on privacy policy documents.",
+      result: "Won Stanford TreeHacks 2024 for innovative use of AI in improving user privacy understanding."
+    },
+    technologies: ["Python", "Hugging Face", "NLP", "React", "FastAPI", "AWS Lambda"],
+    githubUrl: "https://github.com/himavanthkar",
+    demoUrl: "https://github.com/himavanthkar"
   }
 ];
 
