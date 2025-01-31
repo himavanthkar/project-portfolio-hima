@@ -182,12 +182,35 @@ function App() {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormData({ name: '', email: '', message: '' });
-    alert('Thank you for your message! I will get back to you soon.');
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch('https://formspree.io/f/xovjwjre', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Failed to send message:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -494,6 +517,7 @@ function App() {
                     isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-white border-gray-300'
                   } focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
                   required
+                  disabled={isSubmitting}
                 />
               </div>
               <div>
@@ -509,6 +533,7 @@ function App() {
                     isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-white border-gray-300'
                   } focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
                   required
+                  disabled={isSubmitting}
                 />
               </div>
               <div>
@@ -524,14 +549,28 @@ function App() {
                     isDark ? 'bg-gray-800 border-gray-600 text-white' : 'bg-white border-gray-300'
                   } focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
                   required
+                  disabled={isSubmitting}
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
+                className={`w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors ${
+                  isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
+                disabled={isSubmitting}
               >
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
+              {submitStatus === 'success' && (
+                <div className="mt-4 p-4 bg-green-100 text-green-700 rounded-md">
+                  Thank you for your message! I will get back to you soon.
+                </div>
+              )}
+              {submitStatus === 'error' && (
+                <div className="mt-4 p-4 bg-red-100 text-red-700 rounded-md">
+                  Failed to send message. Please try again or contact me directly at himvanth89@gmail.com
+                </div>
+              )}
             </form>
           </div>
         </div>
