@@ -196,7 +196,11 @@ function App() {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          ...formData,
+          subject: `Portfolio Contact from ${formData.name}`,
+          _subject: `New message from ${formData.name} via Portfolio`
+        })
       });
 
       if (response.ok) {
