@@ -321,7 +321,10 @@ function App() {
                   src={
                     index === 0 ? "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&q=80&w=2894&ixlib=rb-4.0.3"
                     : index === 1 ? "https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?auto=format&fit=crop&q=80&w=2925&ixlib=rb-4.0.3"
-                    : "https://images.unsplash.com/photo-1594904351111-a072f80b1a71?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3"
+                    : index === 2 ? "https://images.unsplash.com/photo-1594904351111-a072f80b1a71?auto=format&fit=crop&q=80&w=2670&ixlib=rb-4.0.3"
+                    : index === 3 ? "https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=2960&ixlib=rb-4.0.3"
+                    : index === 4 ? "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2944&ixlib=rb-4.0.3"
+                    : "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?auto=format&fit=crop&q=80&w=2966&ixlib=rb-4.0.3"
                   }
                   alt={project.title}
                   className="w-full h-48 object-cover"
