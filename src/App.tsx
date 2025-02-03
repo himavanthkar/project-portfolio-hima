@@ -382,6 +382,35 @@ function App() {
                   <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'} mb-4`}>
                     {project.description}
                   </p>
+                  
+                  {/* Project Details */}
+                  <div className="mb-4 space-y-3">
+                    <div>
+                      <h4 className="font-semibold text-blue-600 dark:text-blue-400">Situation</h4>
+                      <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                        {project.details.situation}
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-blue-600 dark:text-blue-400">Task</h4>
+                      <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                        {project.details.task}
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-blue-600 dark:text-blue-400">Action</h4>
+                      <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                        {project.details.action}
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-blue-600 dark:text-blue-400">Result</h4>
+                      <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                        {project.details.result}
+                      </p>
+                    </div>
+                  </div>
+
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, i) => (
                       <span key={i} className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">
