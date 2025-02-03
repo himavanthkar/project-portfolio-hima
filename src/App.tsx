@@ -21,16 +21,16 @@ const useDarkMode = () => {
 // Project data
 const projectData = [
   {
-    title: "Peer Support Website (Real-Time Distributed System)",
-    period: "Jan 2024 - Present",
-    description: "A real-time distributed system for peer support and communication using AWS services",
+    title: "SoulConnect - HIPAA and DISHA-Compliant Real-Time Peer Support Platform",
+    period: "Dec 2022 - Present",
+    description: "A HIPAA and DISHA-compliant real-time distributed system for secure mental health support",
     details: {
-      situation: "Users needed a platform to connect and communicate in real-time.",
-      task: "Build a real-time peer support platform using WebSockets and SignalR.",
-      action: "Deployed the application on AWS Elastic Beanstalk, used RDS for storage, and implemented ElastiCache (Redis) for distributed caching. Designed a Power BI dashboard to visualize user engagement metrics.",
-      result: "Improved system performance by 25% and enabled real-time communication for over 1,000 users."
+      situation: "Mental health support platforms needed secure, compliant real-time communication systems across US and India.",
+      task: "Build a HIPAA (US) and DISHA (India) compliant platform for secure mental health support with real-time features.",
+      action: "Engineered backend using Node.js/Express.js with encryption, developed RESTful API, implemented AWS services (Kinesis, Spark, S3, RDS), and created real-time dashboards with QuickSight. Built with robust security measures and multi-tenant data access.",
+      result: "Launched successfully with 500+ users in the first month, providing secure mental health support with enhanced web services performance."
     },
-    technologies: ["React", "SignalR", "AWS Elastic Beanstalk", "RDS", "ElastiCache", "Power BI"],
+    technologies: ["Node.js", "Express.js", "AWS Kinesis", "Apache Spark", "AWS S3", "RDS", "QuickSight", "REST API"],
     githubUrl: "https://github.com/himavanthkar",
     demoUrl: "https://github.com/himavanthkar"
   },
