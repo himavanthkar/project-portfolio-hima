@@ -392,6 +392,14 @@ function App() {
                     {project.description}
                   </p>
                   
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech, i) => (
+                      <span key={i} className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
                   <button 
                     onClick={() => toggleProject(index)}
                     className="mb-4 flex items-center text-blue-600 hover:text-blue-700 transition-colors"
@@ -399,19 +407,19 @@ function App() {
                     {expandedProjects.includes(index) ? (
                       <>
                         <ChevronUp className="w-4 h-4 mr-1" />
-                        Hide Details
+                        Show Less
                       </>
                     ) : (
                       <>
                         <ChevronDown className="w-4 h-4 mr-1" />
-                        Show Details
+                        Read More
                       </>
                     )}
                   </button>
 
                   {/* Project Details */}
                   {expandedProjects.includes(index) && (
-                    <div className="mb-4 space-y-3 animate-fadeIn">
+                    <div className="mb-4 space-y-3 animate-fadeIn border-t pt-4 dark:border-gray-600">
                       <div>
                         <h4 className="font-semibold text-blue-600 dark:text-blue-400">Situation</h4>
                         <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
@@ -439,13 +447,6 @@ function App() {
                     </div>
                   )}
 
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, i) => (
-                      <span key={i} className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
                   <div className="flex space-x-4">
                     <a
                       href={project.githubUrl}
