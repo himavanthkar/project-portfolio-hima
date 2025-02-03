@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, User, Code, Briefcase, GraduationCap, Moon, Sun, Brain, Database, Award, ChevronRight, ExternalLink, Instagram } from 'lucide-react';
+import { Github, Linkedin, Mail, User, Code, Briefcase, GraduationCap, Moon, Sun, Brain, Database, Award, ChevronRight, ExternalLink, Instagram, ChevronUp, ChevronDown } from 'lucide-react';
 import { ExperienceCard } from './components/ExperienceCard';
 import { ResumeDownload } from './components/Resume';
 
@@ -177,6 +177,7 @@ function App() {
   const [isDark, setIsDark] = useDarkMode();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [expandedProjects, setExpandedProjects] = useState<number[]>([]);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -184,6 +185,14 @@ function App() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const toggleProject = (index: number) => {
+    setExpandedProjects(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index)
+        : [...prev, index]
+    );
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -383,33 +392,52 @@ function App() {
                     {project.description}
                   </p>
                   
+                  <button 
+                    onClick={() => toggleProject(index)}
+                    className="mb-4 flex items-center text-blue-600 hover:text-blue-700 transition-colors"
+                  >
+                    {expandedProjects.includes(index) ? (
+                      <>
+                        <ChevronUp className="w-4 h-4 mr-1" />
+                        Hide Details
+                      </>
+                    ) : (
+                      <>
+                        <ChevronDown className="w-4 h-4 mr-1" />
+                        Show Details
+                      </>
+                    )}
+                  </button>
+
                   {/* Project Details */}
-                  <div className="mb-4 space-y-3">
-                    <div>
-                      <h4 className="font-semibold text-blue-600 dark:text-blue-400">Situation</h4>
-                      <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                        {project.details.situation}
-                      </p>
+                  {expandedProjects.includes(index) && (
+                    <div className="mb-4 space-y-3 animate-fadeIn">
+                      <div>
+                        <h4 className="font-semibold text-blue-600 dark:text-blue-400">Situation</h4>
+                        <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                          {project.details.situation}
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-blue-600 dark:text-blue-400">Task</h4>
+                        <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                          {project.details.task}
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-blue-600 dark:text-blue-400">Action</h4>
+                        <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                          {project.details.action}
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-blue-600 dark:text-blue-400">Result</h4>
+                        <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                          {project.details.result}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-blue-600 dark:text-blue-400">Task</h4>
-                      <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                        {project.details.task}
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-blue-600 dark:text-blue-400">Action</h4>
-                      <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                        {project.details.action}
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-blue-600 dark:text-blue-400">Result</h4>
-                      <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                        {project.details.result}
-                      </p>
-                    </div>
-                  </div>
+                  )}
 
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, i) => (
