@@ -39,7 +39,8 @@ export default function App() {
     return () => window.removeEventListener("hashchange", on);
   }, []);
 
-  if (route === "all") return <FlatPortfolio />;
+  // Primary site is the résumé (FlatPortfolio). The 3D "Roblox" world lives at #roblox.
+  if (route !== "roblox") return <FlatPortfolio />;
 
   return (
     <div className="rw-root">

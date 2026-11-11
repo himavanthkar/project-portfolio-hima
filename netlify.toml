@@ -1,4 +1,5 @@
-# Netlify build settings for the 3D portfolio (served at the site root).
+# Netlify build settings for himavanthkarpurapu.com (served at the site root).
+# GitHub Pages ignores this file; Pages uses .github/workflows/deploy-pages.yml.
 [build]
   command = "npm run build"
   publish = "dist"

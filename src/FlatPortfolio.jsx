@@ -4,12 +4,12 @@ const RESUME_PDF = `${import.meta.env.BASE_URL}Himavanth_Karpurapu_Resume.pdf`;
 const RESUME_FILE = "Himavanth_Karpurapu_Resume.pdf";
 
 // The "view everything at once" page - a classic scrollable résumé for anyone who'd
-// rather skim than walk the city. Reached at #all; links back to the city at #.
+// This is the primary site, served at the root. The 3D "Roblox" world lives at #roblox.
 export default function FlatPortfolio() {
   return (
     <div className="flat">
       <div className="flat-topbar">
-        <a className="flat-back" href="#">← Back to the city</a>
+        <a className="flat-back" href="#roblox">🎮 Go to a Roblox version of my résumé →</a>
         <a className="flat-download" href={RESUME_PDF} download={RESUME_FILE}>⬇ Download PDF</a>
       </div>
 
@@ -92,7 +92,7 @@ export default function FlatPortfolio() {
         <p>Have a role, an idea, or just want to talk shop? My inbox is open.</p>
         <a className="mailto" href={`mailto:${content.email}`}>{content.email}</a>
         <div style={{ marginTop: "1rem" }}>
-          <a className="btn ghost" href="#">← Explore it as a 3D city instead</a>
+          <a className="btn ghost" href="#roblox">🎮 Explore it as a Roblox 3D world instead →</a>
         </div>
       </section>
 

@@ -78,7 +78,7 @@ export default function Player({ buildings = [], spawn = { x: 0, z: 8, yaw: 0 } 
         case "ShiftLeft": case "ShiftRight": k.sprint = true; break;
         case "Space": k.jump = true; break;
         case "KeyV": if (!e.repeat) playerState.mode = playerState.mode === "third" ? "first" : "third"; break;
-        case "KeyR": if (!e.repeat) window.location.hash = "all"; break; // open the "view everything" page
+        case "KeyR": if (!e.repeat) window.location.hash = ""; break; // back to the résumé (primary site)
         case "KeyE":
           if (e.repeat) break;
           if (playerState.inside) playerState.inside = null;           // leave

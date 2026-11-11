@@ -210,7 +210,7 @@ export default function HUD({ city }) {
 
   const toggleView = () => { playerState.mode = playerState.mode === "third" ? "first" : "third"; setMode(playerState.mode); };
   const leave = () => { window.speechSynthesis?.cancel(); playerState.inside = null; setInside(null); };
-  const openResume = (e) => { e?.stopPropagation?.(); setShowNudge(false); window.location.hash = "all"; };
+  const openResume = (e) => { e?.stopPropagation?.(); setShowNudge(false); window.location.hash = ""; };
   const startExploring = (e) => {
     e?.stopPropagation?.();
     if (isTouch) { startedRef.current = true; setStarted(true); }        // reveal the joystick
