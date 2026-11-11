@@ -1,36 +1,23 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "portfolio-3d",
   "private": true,
-  "version": "0.0.0",
+  "version": "5.0.0",
   "type": "module",
+  "description": "Portfolio as a walkable 3D city you can enter — museum interiors, coins, résumé page (React Three Fiber + Vite)",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
-    "lucide-react": "^0.474.0",
+    "@react-three/drei": "^9.114.0",
+    "@react-three/fiber": "^8.17.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-transition-group": "^4.4.5"
+    "three": "^0.169.0"
   },
   "devDependencies": {
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
-    "@vitejs/plugin-react": "^2.2.0",
-    "autoprefixer": "^10.4.18",
-    "eslint": "^7.32.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.3.4",
-    "globals": "^15.9.0",
-    "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1",
-    "tsx": "^4.19.2",
-    "typescript": "^5.5.3",
-    "vite": "^3.2.7"
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.10"
   }
 }
